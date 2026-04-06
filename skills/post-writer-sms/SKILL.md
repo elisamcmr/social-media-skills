@@ -165,9 +165,34 @@ the people who win are the ones who post anyway.
    - Engagement: open question that invites a reply
    - Personal: "Anyone else?"
 
-4. **Format for the target platform** — apply line breaks, hashtags, and length rules for the platform.
+4. **Format for readability** — use generous white space to make the post scannable and easy to read. Apply one of these spacing patterns:
 
-5. **Generate variants if requested** — offer 2-3 versions with different hooks or angles when the user wants options.
+   **Pattern A — Single-line rhythm:**
+   ```
+   Line 1
+
+   Line 2
+
+   Line 3
+
+   Line 4
+   ```
+
+   **Pattern B — Grouped rhythm (1-2-1 or similar):**
+   ```
+   Line 1
+
+   Line 2
+   Line 3
+
+   Line 4
+   ```
+
+   The key rule: **never stack more than 2-3 lines without an empty line break.** Dense paragraphs kill engagement on every platform. When in doubt, add the line break — readers scroll past walls of text.
+
+5. **Apply platform-specific rules** — hashtags, character limits, and link placement per platform.
+
+6. **Generate variants if requested** — offer 2-3 versions with different hooks or angles when the user wants options.
 
 ---
 
@@ -207,7 +232,7 @@ Before delivering the final post, verify:
 - [ ] **Length is platform-appropriate** — within spec for the target platform
 - [ ] **No links in the LinkedIn body** — URL goes in the first comment
 - [ ] **Hashtag count is correct** — 3-5 for LinkedIn, 0-2 for X, 0-1 for Threads, 0 for Bluesky
-- [ ] **White space is readable** — line breaks every 1-2 sentences on LinkedIn
+- [ ] **White space is readable** — empty line after every 1-2 lines; no dense text blocks
 
 ---
 

@@ -62,6 +62,10 @@ Each body post carries one idea, one example, or one step. No cramming multiple 
 
 - **One idea per post** — if a post needs a "and also…", split it
 - **Each post stands alone** — a reader who jumps in mid-thread should follow it without context
+- **Format each post for readability** — use empty lines between lines or short groups of lines to create white space. Never stack more than 2-3 lines without an empty line break. Use one of these spacing patterns within each post:
+  - **Single-line rhythm:** one line, empty line, one line, empty line
+  - **Grouped rhythm:** one line, empty line, two lines, empty line, one line
+  - Dense text blocks kill thread engagement — when in doubt, add the line break
 - **Transitions build momentum** — end each post with a hint of what comes next or a micro-payoff that makes the next post feel earned
 - **Vary post length** — mix short punchy posts (1-2 lines) with longer explanatory ones; the rhythm prevents fatigue
 - **End posts on curiosity hooks** — a short cliffhanger or unresolved tension keeps readers scrolling
@@ -258,6 +262,7 @@ Before delivering the final thread, verify:
 - [ ] **Closer has a CTA** — the reader knows exactly what to do after finishing
 - [ ] **Length matches platform** — 280 chars on X, longer on LinkedIn, conversational on Threads
 - [ ] **Voice is consistent** — sounds like the user, not a generic expert
+- [ ] **White space is readable** — empty line after every 1-2 lines within each post; no dense text blocks
 
 ---
 
