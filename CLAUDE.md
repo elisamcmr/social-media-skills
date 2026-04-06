@@ -88,3 +88,35 @@ Common cross-reference patterns:
 ## Validation
 
 Run `./validate-skills.sh` to check all skills against conventions before committing.
+
+## Releasing
+
+Follow these steps when creating a new release:
+
+1. **Bump the version** in `metadata.version` inside each changed skill's `SKILL.md` frontmatter. Use semver: patch for fixes, minor for new features or improvements, major for breaking changes.
+
+2. **Commit and push** the version bump to `main`.
+
+3. **Build zip files** — one per skill, each containing only that skill's `SKILL.md`:
+
+   ```bash
+   mkdir -p releases
+   for dir in skills/*/; do
+     name=$(basename "$dir")
+     zip -j "releases/$name.zip" "$dir"SKILL.md
+   done
+   ```
+
+4. **Create the GitHub release** with `gh`:
+
+   ```bash
+   gh release create vX.Y.Z --title "Social Media Skills vX.Y.Z" --notes "Release notes here"
+   ```
+
+5. **Upload all zip files** to the release:
+
+   ```bash
+   gh release upload vX.Y.Z releases/audience-growth-tracker-sms.zip releases/carousel-writer-sms.zip releases/content-calendar-sms.zip releases/content-pattern-analyzer-sms.zip releases/content-repurposer-sms.zip releases/content-strategy-sms.zip releases/hook-writer-sms.zip releases/optimization-advisor-sms.zip releases/performance-analyzer-sms.zip releases/platform-strategy-sms.zip releases/post-writer-sms.zip releases/social-media-context-sms.zip releases/thread-writer-sms.zip
+   ```
+
+The `releases/` directory is gitignored — zip files are only attached to GitHub releases, not committed to the repo.
