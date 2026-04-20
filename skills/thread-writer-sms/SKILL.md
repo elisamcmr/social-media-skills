@@ -2,7 +2,7 @@
 name: thread-writer-sms
 description: "When the user wants to write a multi-part thread for Twitter/X, LinkedIn, or other platforms. Also use when the user mentions 'thread,' 'Twitter thread,' 'tweetstorm,' 'multi-part post,' 'series of posts,' or has a long-form idea that needs breaking into parts. For single posts, see post-writer-sms. For carousels, see carousel-writer-sms."
 metadata:
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # Thread Writer
@@ -51,10 +51,30 @@ Every thread has three distinct zones: the **hook**, the **body**, and the **clo
 
 The hook post must do two jobs simultaneously: stand alone as a compelling post and compel the reader to click through the entire thread.
 
-- Apply hook-writer-sms patterns (contrarian, question, story opener, statistic, bold claim, empathy, before/after, confession)
-- Make a promise — what will the reader know, feel, or be able to do after this thread?
-- On Twitter/X: include a thread signal ("A thread:" or "🧵") on the same line or immediately after the hook
-- The hook must be strong enough to perform as a standalone post — most readers decide here
+> **Always use the `hook-writer-sms` skill to write the first post.** Do not draft the first post freehand. Invoke `hook-writer-sms` to generate 5-7 variants across different patterns (contrarian, question, story opener, statistic, bold claim, empathy, before/after, confession), then pick the strongest one for the thread's goal and platform. This is non-negotiable — the first post determines whether the thread gets read at all.
+
+- **Keep it extremely short — one or two lines maximum.** A long first post kills the thread before it starts. Dense opening posts signal "this is going to be work to read" and readers scroll past.
+- **Be ruthlessly specific.** Generic openers lose. Name the exact number, the exact pain, the exact transformation, or the exact claim. "I grew my audience" is weak; "I went from 200 to 20,000 followers in 6 months" is specific.
+- **Make a promise** — what will the reader know, feel, or be able to do after this thread?
+- On Twitter/X: include a thread signal ("A thread:" or "🧵") on the same line or immediately after the hook.
+- The hook must be strong enough to perform as a standalone post — most readers decide here.
+
+**Real-world example of a high-performing first post:**
+
+```
+50 THINGS TO DO INSTEAD OF WASTING ANOTHER YEAR (start them in April):
+```
+
+_Stats: 9K likes, 50 comments, 1.7K reposts, 1.7K shares._
+
+Why it works:
+
+- **One line.** No setup, no preamble — the promise lands instantly.
+- **Specific number (50).** "A few things" would die; "50 things" signals scale and saves-worthiness.
+- **Loss aversion.** "Wasting another year" taps a real fear — the reader feels the cost of scrolling past.
+- **Urgency anchor.** "Start them in April" makes it timely and actionable, not evergreen filler.
+- **Clear thread signal (1/12).** Readers know exactly how much is coming and commit to the ride.
+- **All caps on the promise.** Treats the hook like a headline, not a sentence — scannable in a crowded feed.
 
 ### Body Posts
 
@@ -86,6 +106,7 @@ The closer lands the thread and tells the reader what to do next.
 Choose the format before writing. The format determines the pacing, body structure, and closing approach.
 
 ### 1. Listicle
+
 **Best for:** Tactical advice, tools, habits, mistakes, recommendations
 
 **Structure:** "[N] things about [topic]" — dedicate one post per item. Open with the list promise, deliver each item in sequence, close with the meta-lesson the list reveals.
@@ -117,6 +138,7 @@ Resist the urge to add "and also."
 ---
 
 ### 2. Story Arc
+
 **Best for:** Personal journey, case study narrative, lessons from failure or success
 
 **Structure:** Setup → Conflict → Resolution → Lesson
@@ -131,6 +153,7 @@ Resist the urge to add "and also."
 ---
 
 ### 3. Framework
+
 **Best for:** Step-by-step process, system, method, or repeatable playbook
 
 **Structure:** Name the framework → define each step → show the output
@@ -144,6 +167,7 @@ Resist the urge to add "and also."
 ---
 
 ### 4. Breakdown
+
 **Best for:** Analyzing a real example — a viral post, a company strategy, a historical event
 
 **Structure:** Present the subject → examine each component → extract the lesson
@@ -172,6 +196,7 @@ Follow @handle for one content breakdown every week.
 ---
 
 ### 5. Contrarian
+
 **Best for:** Challenging conventional wisdom, reframing a popular belief, sparking debate
 
 **Structure:** State the contrarian claim → acknowledge the common belief → present your evidence → restate the claim with nuance
@@ -187,6 +212,7 @@ Follow @handle for one content breakdown every week.
 ## Platform-Specific Threading
 
 ### Twitter / X
+
 - **280 characters per post** — every word earns its place
 - **Number each post** — "1/" at the end of the first post, "2/", "3/" on each subsequent post; number signals this is a thread worth following
 - **Thread as a self-reply chain** — post 1 live, reply to yourself for posts 2 onward
@@ -216,12 +242,14 @@ The algorithm rewards engagement rate, not volume.
 ```
 
 ### LinkedIn
+
 - **Longer posts per entry** — LinkedIn readers expect more depth; each post in a series can be 200-600 characters
 - **Each post links to the next** — end each post with "Part 2 of N: [link]" or direct readers to follow for the next installment
 - **Publish as separate posts, not replies** — LinkedIn has no native threading; a series is a sequence of standalone posts connected by copy
 - **Label the series** — use a consistent label like "Thread (2/5):" at the top of each post
 
 ### Threads (Meta)
+
 - **Conversational, no strict length limit** — write like you're texting a smart friend
 - **Native thread format exists** — use it; Threads supports reply-chain threads natively
 - **No hard character ceiling pressure** — let posts breathe; 1-3 short paragraphs per post is fine
@@ -256,6 +284,8 @@ When MCP tools are not available, output the thread as numbered plain text forma
 Before delivering the final thread, verify:
 
 - [ ] **Hook stands alone** — would this first post perform without the thread?
+- [ ] **Hook is short and specific** — first post is one or two lines, names a specific number, pain, or claim
+- [ ] **First post was written using hook-writer-sms** — skill was invoked to generate variants, not drafted freehand
 - [ ] **One idea per post** — no post tries to do two jobs
 - [ ] **Transitions are present** — each post flows into the next
 - [ ] **Posts are numbered** — on Twitter/X, every post has its number
