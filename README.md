@@ -1,6 +1,6 @@
 # Social Media Skills
 
-AI agent skills for social media content strategy, creation, and analysis across text-first platforms.
+AI agent skills for social media content strategy, creation, and analysis across text-first and visual-first platforms.
 
 ## Skill Catalog
 
@@ -25,6 +25,7 @@ AI agent skills for social media content strategy, creation, and analysis across
 | [post-writer-sms](skills/post-writer-sms/)               | Writes single standalone posts optimized for each platform's format and audience |
 | [thread-writer-sms](skills/thread-writer-sms/)           | Writes multi-post threads with a clear narrative arc and strong opening hook     |
 | [carousel-writer-sms](skills/carousel-writer-sms/)       | Writes slide-by-slide carousel scripts for LinkedIn and similar visual formats   |
+| [caption-writer-sms](skills/caption-writer-sms/)         | Writes captions for visual-first platforms — Facebook, Instagram, TikTok, Pinterest |
 | [content-repurposer-sms](skills/content-repurposer-sms/) | Transforms existing content into new formats and adapts it across platforms      |
 | [hook-writer-sms](skills/hook-writer-sms/)               | Crafts high-performing opening lines to maximize engagement and stop-the-scroll  |
 
@@ -108,10 +109,19 @@ npx skillkit install blacktwist/social-media-skills --list
 
 ## Supported Platforms
 
+**Text-first**
+
 - **LinkedIn** — long-form posts, carousels, newsletters
 - **Twitter/X** — posts, threads, spaces
 - **Threads** — posts, threads (Meta)
 - **Bluesky** — posts, threads, starter packs
+
+**Visual-first** (captions only — see `caption-writer-sms`)
+
+- **Facebook** — feed posts, photo and video captions
+- **Instagram** — feed, Reels, carousels, stories
+- **TikTok** — short-form video captions
+- **Pinterest** — pin titles and descriptions
 
 ## Tool Integrations
 

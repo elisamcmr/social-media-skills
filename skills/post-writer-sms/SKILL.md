@@ -1,8 +1,8 @@
 ---
 name: post-writer-sms
-description: "When the user wants to write a social media post for LinkedIn, Twitter/X, Threads, or Bluesky. Also use when the user mentions 'write a post,' 'draft a post,' 'LinkedIn post,' 'tweet,' 'Threads post,' 'Bluesky post,' 'social media post,' 'help me write,' or shares a topic and wants it turned into a post. For multi-part content, see thread-writer-sms. For carousels, see carousel-writer-sms. For opening lines specifically, see hook-writer-sms."
+description: "When the user wants to write a social media post for LinkedIn, Twitter/X, Threads, Bluesky, Facebook, Instagram, TikTok, Pinterest, or YouTube. Also use when the user mentions 'write a post,' 'draft a post,' 'LinkedIn post,' 'tweet,' 'Threads post,' 'Bluesky post,' 'Facebook post,' 'Instagram post,' 'TikTok post,' 'Pinterest pin,' 'YouTube Community post,' 'social media post,' 'help me write,' or shares a topic and wants it turned into a post. For deeper visual-platform caption writing, see caption-writer-sms. For multi-part content, see thread-writer-sms. For carousels, see carousel-writer-sms. For opening lines, see hook-writer-sms."
 metadata:
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # Post Writer
@@ -152,6 +152,101 @@ the people who win are the ones who post anyway.
 
 ---
 
+## Visual-First Platforms
+
+The platforms below are visual-first: an image or video carries the attention and the post copy is the supporting caption. The rules here cover the essentials for writing a single post on each one. **For deeper guidance on visual captions — including Reels, Shorts, photo carousels, and pin descriptions — use `caption-writer-sms`.**
+
+### Facebook
+
+**Format:**
+- Conversational, story-driven, personal — Facebook rewards posts that read like a friend talking
+- Hook in line 1; truncation kicks in around 477 chars on desktop, ~120 chars on mobile
+- Links work in the body and are not suppressed the way they are on Instagram
+
+**Specs:**
+- **40-80 characters** is the soft sweet spot for highest engagement on photo posts; storytelling captions can run 300-500 chars
+- 1-3 hashtags max — only use them if branded or community-specific
+- Tag relevant Pages and people to boost reach into their networks
+- A direct question at the end consistently outperforms statements
+- Native video and personal stories outperform link drops
+
+---
+
+### Instagram
+
+**Format:**
+- The first **125 characters** decide whether the rest gets read — caption truncates with "...more" after that on mobile
+- Hook in line 1 must do the work of a headline
+- Body builds on the visual; CTA closes on a save or share
+
+**Specs:**
+- 2200 character limit; high performers span the full range — one-liners to mini-essays
+- **3-10 hashtags** — mix branded, niche, and broader community tags; place at the end of the caption or in the first comment
+- **No clickable links in captions** — direct viewers to "link in bio" or use the Reels/Stories link sticker
+- Always write **alt text** in the accessibility settings for reach and accessibility
+- Tag collaborators, locations, and products to expand distribution
+- For Reels: caption is secondary to the on-screen hook; a tight written hook still drives saves and shares
+
+**Caption length by format:** photo feed 80-300 chars, carousel 200-800 chars, Reel 100-300 chars, Story rarely read.
+
+---
+
+### TikTok
+
+**Format:**
+- The video carries the hook — the caption adds context, a punchline, or a search keyword
+- First line should reinforce or extend the on-screen hook
+- Conversational, low-polish, native voice — overproduced captions feel like ads
+
+**Specs:**
+- 2200 character limit (expanded from 300 in 2022); most high-performers stay **under 150 characters**
+- **3-5 hashtags** — mix one broad, one mid-tier niche, a few specific topical
+- **TikTok SEO matters** — the caption is indexed for in-app search; include keywords your audience would type
+- Mention sounds, trends, and creators when relevant
+- Listicle setups, curiosity gaps that finish in the video, and "Part 1" framing perform well
+
+---
+
+### Pinterest
+
+**Format:**
+- Pinterest is a **search engine**, not a social feed — copy is SEO text, not lifestyle prose
+- Pin **title** and **description** are separate fields and both matter
+- Hashtags are effectively ignored — rely on natural keywords
+
+**Specs:**
+- **Title:** 100 char limit — front-load the primary keyword, write like a headline a searcher would click
+- **Description:** 500 char limit — natural, keyword-rich sentences describing what the pin is for and who it helps
+- **Link** goes in the dedicated link field, not in the caption
+- No emojis in titles (lowers click-through); 0-1 in description if it fits the tone
+- Long-tail framings — "small kitchen organization ideas for renters" beats "kitchen ideas"
+- "How to," "ideas for," "best [X] for [Y]" framings match how people search
+
+---
+
+### YouTube
+
+YouTube has three distinct post surfaces — long-form video, Shorts, and Community posts. Each plays by different rules.
+
+**Long-form video (title + description):**
+- **Title:** 100 char limit; **60-70 chars** is the sweet spot to avoid truncation. Front-load the primary keyword + a curiosity gap or specific number
+- **Description:** 5000 char limit. First 150 chars are the hook (above the "...more" fold). Below: 1-2 paragraph summary, **timestamps/chapters**, useful links, hashtags (3 max — first hashtag becomes the clickable tag above the title)
+- Pin a top comment for the primary CTA when description visibility isn't enough
+
+**Shorts:**
+- Caption stays under 150 characters — Shorts are discovered via swipe, not search
+- Include `#shorts` for Shorts shelf eligibility
+- Soft CTA: "subscribe for more," "full video on my channel"
+
+**Community posts:**
+- Text-first, similar tone to Facebook
+- Polls, questions, and quick context drive return visits when the next video drops
+- Optional image attachment
+
+**Specs across surfaces:** 3 hashtags max in descriptions; specific numbers and "how I" framings perform well; clickbait that the video doesn't deliver gets punished by retention drop.
+
+---
+
 ## Writing Process
 
 1. **Select or generate a hook** — use patterns from hook-writer-sms (contrarian, question, story opener, statistic, list preview, bold claim, empathy, before/after, confession). Match the hook pattern to the platform and content type.
@@ -230,8 +325,10 @@ Before delivering the final post, verify:
 - [ ] **Voice is consistent** — does it sound like the user, not a generic expert?
 - [ ] **CTA is clear** — does the reader know exactly what to do or think next?
 - [ ] **Length is platform-appropriate** — within spec for the target platform
-- [ ] **No links in the LinkedIn body** — URL goes in the first comment
-- [ ] **Hashtag count is correct** — 3-5 for LinkedIn, 0-2 for X, 0-1 for Threads, 0 for Bluesky
+- [ ] **No links in the LinkedIn or Instagram body** — LinkedIn link goes in the first comment; Instagram link goes in bio
+- [ ] **Hashtag count is correct** — 3-5 LinkedIn, 0-2 X, 0-1 Threads, 0 Bluesky, 1-3 Facebook, 3-10 Instagram, 3-5 TikTok, 0 Pinterest, ≤3 YouTube
+- [ ] **YouTube has chapters** when a long-form video runs over ~3 minutes
+- [ ] **Pinterest title and description** are both filled, keyword-led, and link is set in the dedicated field
 - [ ] **White space is readable** — empty line after every 1-2 lines; no dense text blocks
 
 ---
@@ -248,6 +345,7 @@ Before delivering the final post, verify:
 ## Related Skills
 
 - **social-media-context-sms** — capture voice, pillars, and platform preferences before writing
+- **caption-writer-sms** — deeper guidance for visual-first captions (Facebook, Instagram, TikTok, Pinterest, YouTube)
 - **hook-writer-sms** — generate and test opening lines independently
 - **platform-strategy-sms** — decide which platform to prioritize before writing
 - **content-repurposer-sms** — adapt a finished post across multiple platforms

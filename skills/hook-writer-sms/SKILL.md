@@ -1,8 +1,8 @@
 ---
 name: hook-writer-sms
-description: "When the user wants help writing opening lines, hooks, or first sentences that grab attention. Also use when the user mentions 'hook,' 'opening line,' 'first line,' 'scroll stopper,' 'attention grabber,' 'headline,' 'how to start my post,' or 'nobody reads past my first line.' Can be used standalone or invoked by other creation skills. For writing full posts, see post-writer-sms. For threads, see thread-writer-sms."
+description: "When the user wants help writing opening lines, hooks, first sentences, video hooks, thumbnails titles, or pin titles that grab attention. Also use when the user mentions 'hook,' 'opening line,' 'first line,' 'scroll stopper,' 'attention grabber,' 'headline,' 'video hook,' 'on-screen hook,' 'YouTube title,' 'thumbnail text,' 'pin title,' 'how to start my post,' or 'nobody reads past my first line.' Covers text-first platforms (LinkedIn, Twitter/X, Threads, Bluesky) and visual-first platforms (Facebook, Instagram, TikTok, Pinterest, YouTube). Can be used standalone or invoked by other creation skills. For writing full posts, see post-writer-sms. For threads, see thread-writer-sms."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Hook Writer
@@ -173,6 +173,45 @@ Before generating hooks, read `.agents/social-media-context-sms.md` (if it exist
 - Self-aware humor and genuine takes outperform "growth hacks"
 - **Best patterns:** Confession, contrarian, question, bold claim
 
+### Facebook
+- Hook in line 1 before mobile truncation (~120 chars)
+- Personal, conversational, story-led — Facebook rewards posts that feel like a friend talking
+- Direct questions outperform statements; community + family + local context land hardest
+- "Look what happened" and behind-the-scenes framings perform well
+- **Best patterns:** Story opener, question, empathy, before/after
+
+### Instagram
+- The hook lives in **two places**: line 1 of the caption (before "...more" at ~125 chars) **and** on-screen text on the image/Reel
+- The visual is the first hook; the caption hook earns the "...more" tap
+- Caption hooks must be specific — generic openers lose to the visual
+- Reels: pair an on-screen hook ("3 mistakes I made") with a caption hook that promises a different angle ("the one I'm most embarrassed about ↓")
+- **Best patterns:** Curiosity gap, list preview, story opener, before/after, confession
+
+### TikTok
+- The hook is a **video hook**, not a written one — first 1-3 seconds carry it
+- Caption hook is secondary, but matters for in-app SEO and as a curiosity tag
+- On-screen text hook should be punchy, under 6 words, and visible without UI overlap
+- The voice/audio hook in the first 2 seconds determines whether the viewer doesn't swipe
+- "Wait for it," "I was not ready for what happened at 0:32," and "POV:" framings work natively
+- **Best patterns:** Curiosity gap, contrarian, list preview, confession, story opener
+
+### Pinterest
+- The hook is the **pin title** + the **image headline**, both indexed for search
+- Pinterest is search-driven, not feed-driven — hooks must contain the **keyword someone would type**
+- "How to," "ideas for," "best [X] for [Y]" framings match how people search
+- Numbers and specifics ("15 small kitchen ideas for renters") beat vague pitches
+- Avoid clickbait and contrarianism — Pinterest searchers are looking for help, not provocation
+- **Best patterns:** List preview, statistic/data, before/after, how-to (a pattern variant of list preview)
+
+### YouTube
+- The hook is **three layered surfaces**: title, thumbnail, and the first 5-8 seconds of the video
+- Title and thumbnail must work together — the title sets the curiosity, the thumbnail confirms it
+- **Title hooks:** lead with the primary keyword + a specific number, contrast, or curiosity gap. Avoid clickbait that the video doesn't deliver — retention drop is punished by the algorithm
+- **Long-form video hooks:** restate the title in the first 5 seconds with stakes ("If you watch this you'll...") to lock in retention; the YouTube algorithm uses 30-second retention as a ranking signal
+- **Shorts hooks:** same as TikTok — first 1-3 seconds, on-screen text, voice all aligned
+- **Community post hooks:** like Facebook — direct question or quick context
+- **Best patterns:** Statistic/data, before/after, list preview, contrarian, curiosity gap
+
 ---
 
 ## Hook Generation Process
@@ -265,3 +304,4 @@ Winner: Hook B — confession pattern drove 3x more comments on this topic
 - **post-writer-sms** — turn a strong hook into a full post
 - **thread-writer-sms** — expand a hook into a multi-post thread
 - **carousel-writer-sms** — adapt a hook as the cover slide of a carousel
+- **caption-writer-sms** — pair a video/image hook with a platform-native caption for visual platforms

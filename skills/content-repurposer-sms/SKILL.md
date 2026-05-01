@@ -1,8 +1,8 @@
 ---
 name: content-repurposer-sms
-description: "When the user wants to turn one piece of content into multiple formats or adapt content across platforms. Also use when the user mentions 'repurpose,' 'turn this into,' 'adapt this for,' 'cross-post,' 'reformat,' 'blog to social,' 'newsletter to posts,' or 'get more from this content.' For writing original posts, see post-writer-sms. For threads, see thread-writer-sms. For carousels, see carousel-writer-sms."
+description: "When the user wants to turn one piece of content into multiple formats or adapt content across text-first and visual-first platforms (LinkedIn, Twitter/X, Threads, Bluesky, Facebook, Instagram, TikTok, Pinterest, YouTube). Also use when the user mentions 'repurpose,' 'turn this into,' 'adapt this for,' 'cross-post,' 'reformat,' 'blog to social,' 'newsletter to posts,' 'video to posts,' 'YouTube to clips,' 'Reels from a podcast,' or 'get more from this content.' For writing original posts, see post-writer-sms. For threads, see thread-writer-sms. For carousels, see carousel-writer-sms. For visual-first captions, see caption-writer-sms."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Content Repurposer
@@ -45,16 +45,19 @@ If the user pastes content and names a platform, start repurposing — don't ove
 
 ## Repurposing Matrix
 
-Use this table to identify the highest-value derivatives for any source format.
+Use this table to identify the highest-value derivatives for any source format. Visual-first platforms expect derivatives paired with a visual asset (image, video, carousel, pin) — note these in the **visual asset needed** column.
 
-| **Source** | **Best Derivatives** |
-|---|---|
-| Blog post | LinkedIn post (key insight), Twitter/X thread (key takeaways), carousel (framework or tips), Threads post (casual take), 3-5 standalone posts |
-| Newsletter | Thread (expand the main argument), single post (the one sentence everyone needs to read), carousel (visualize the framework) |
-| Podcast / video transcript | Quote posts (pull the best 3 lines), thread of key moments, carousel of insights, one-liner standalone posts |
-| Existing social post | Adapt for other platforms (lengthen for LinkedIn, shorten for X), expand into a thread, compress into a Threads one-liner |
-| Case study / story | Thread (narrative arc), LinkedIn long-form post, carousel (before/after or steps) |
-| How-to / tutorial | Carousel (step-by-step), thread (one step per post), standalone tips (one tip per post across the week) |
+| **Source** | **Best Derivatives** | **Visual asset needed** |
+|---|---|---|
+| Blog post | LinkedIn post (key insight), Twitter/X thread (key takeaways), LinkedIn or Instagram carousel (framework or tips), Threads post (casual take), 3-5 standalone posts, Pinterest pins per section, Facebook post with image | Pin graphics, carousel slides, optional Reel summary |
+| Newsletter | Thread (expand the main argument), single post (the one sentence everyone needs), LinkedIn or Instagram carousel, Pinterest pin to the archive | Carousel slides, pin graphic |
+| Podcast / video transcript | Quote posts (pull the best 3 lines), thread of key moments, carousel of insights, **Reels / TikToks / Shorts from highlight clips (30-90s each)**, YouTube video itself, Pinterest video pin | Vertical clips for Reels/TikTok/Shorts, square clips for LinkedIn, audiogram for static feeds |
+| Existing social post | Adapt for other platforms (lengthen for LinkedIn, shorten for X), expand into a thread, compress into a Threads one-liner, **turn into a Reel script or TikTok hook** | Optional vertical video for Reels/TikTok |
+| Case study / story | Thread (narrative arc), LinkedIn long-form post, carousel (before/after or steps), Reel "story time" video, YouTube long-form video | Carousel slides, vertical video |
+| How-to / tutorial | Carousel (step-by-step), thread (one step per post), standalone tips (one tip per post across the week), **Reel/TikTok/Short demo (one step per video for a series)**, Pinterest Idea Pin (multi-page tutorial), YouTube long-form tutorial | Step graphics, demo footage, Idea Pin pages |
+| YouTube long-form video | Shorts (3-7 vertical clips with captions), TikTok clips, Reels, X thread of key takeaways, LinkedIn post linking to the full video, Pinterest video pin, Community post teaser, transcript-derived blog post | Vertical re-cuts, Shorts thumbnails |
+| Reel / TikTok / Short | Cross-post to other vertical platforms (Reels↔TikTok↔Shorts↔Pinterest video pin), thread of the lessons, LinkedIn caption + native video upload, transcript-as-blog | Same vertical asset, re-captioned per platform |
+| Webinar / live session | YouTube replay, podcast audio, blog recap, carousel of key slides, Reels/TikToks/Shorts of best moments, X thread of takeaways | Replay video, slide graphics, vertical clips |
 
 ---
 
@@ -108,9 +111,18 @@ Write every derivative as a **platform-native piece**, not a copy-paste transpla
 Apply these rules per platform:
 
 - **Twitter / X** — punchy, under 280 characters per post, direct opening line, no filler, threads use numbered posts
-- **LinkedIn** — more context, conversational but professional, 3-5 short paragraphs, hook in the first line before the "see more" break
+- **LinkedIn** — more context, conversational but professional, 3-5 short paragraphs, hook in the first line before the "see more" break, no link in body (use first comment)
 - **Threads** — casual, like a text to a smart friend, raw and real beats polished and corporate, shorter is often better
-- **Instagram captions** — hook in the first line, depth in the body, CTA at the end, hashtags are optional and go last
+- **Bluesky** — clever, concise, anti-corporate; 300 char limit; no hashtag culture
+- **Facebook** — conversational, story-led, 40-500 chars, 1-3 hashtags max, links work in body, end with a direct question
+- **Instagram** — hook in the first 125 chars, 200-800 char caption, 3-10 hashtags at end or first comment, save/share CTA, no clickable links (link in bio), alt text on every asset
+- **TikTok** — caption is supporting copy under the video; under 150 chars typical, 3-5 hashtags, include in-app search keywords, low-polish native voice
+- **Pinterest** — title (≤100 chars, keyword-led) + description (≤500 chars, helpful and scannable); link in dedicated field; **no hashtag reliance** — use natural keywords; "how to" and "ideas for" framings perform best
+- **YouTube long-form** — title 60-70 chars with keyword + curiosity, description 5000 chars max with chapters/timestamps, 3 hashtags max, links above the "...more" fold
+- **YouTube Shorts** — caption under 150 chars, include `#shorts`, soft CTA; treat the video hook as primary
+- **YouTube Community posts** — text-first, similar tone to Facebook; great for polls and audience warm-ups between video drops
+
+For deeper guidance on visual-first captions (Facebook, Instagram, TikTok, Pinterest, YouTube) use **caption-writer-sms**.
 
 ### Step 5 — Adapt Tone Per Platform
 
@@ -121,7 +133,14 @@ The voice stays the same. The register shifts.
 | Twitter / X | Sharp, opinionated, slightly edgy |
 | LinkedIn | Thoughtful, professional, story-forward |
 | Threads | Casual, human, low-key |
-| Instagram | Visual-first, caption supports the image |
+| Bluesky | Witty, dry, anti-corporate |
+| Facebook | Personal, conversational, community-led |
+| Instagram | Visual-first, caption supports the image; aspirational but specific |
+| TikTok | Native, low-polish, conversational; caption supports the video |
+| Pinterest | Helpful, search-led, keyword-rich; not a personal voice channel |
+| YouTube long-form | Educational, retention-led, hook-and-payoff structure |
+| YouTube Shorts | Same as TikTok — native and tight |
+| YouTube Community | Like Facebook — warm, question-led |
 
 ---
 
@@ -129,13 +148,18 @@ The voice stays the same. The register shifts.
 
 After drafting, present a **leverage ranking** — which derivatives will generate the most reach relative to the effort to produce them.
 
-Default ranking (adjust based on context file platform preferences):
+Default ranking (adjust based on context file platform preferences and whether the user produces video):
 
-1. **Twitter/X thread** — high reach if the hook lands; algorithmic amplification on replies
-2. **LinkedIn post** — durable reach; LinkedIn content lives longer than X posts
-3. **Carousel** — saves drive discovery; one strong carousel can resurface for weeks
-4. **Threads post** — low effort, casual reach, good for testing angles
-5. **Standalone quote posts** — easy to batch; one piece of source content yields 3-5 posts
+1. **Reel / TikTok / Short from a video moment** — highest reach ceiling; vertical video has the strongest algorithmic amplification across Instagram, TikTok, and YouTube Shorts. Same asset, three platforms, three captions
+2. **Twitter/X thread** — high reach if the hook lands; algorithmic amplification on replies
+3. **LinkedIn post** — durable reach; LinkedIn content lives longer than X posts
+4. **Carousel** (LinkedIn or Instagram) — saves drive discovery; one strong carousel can resurface for weeks
+5. **YouTube long-form video** — highest evergreen lift; ranks in search and suggested for months/years
+6. **Pinterest pin or Idea Pin** — slow-burn evergreen reach via search; 6-12 month tail per pin
+7. **Threads post** — low effort, casual reach, good for testing angles
+8. **Facebook post** — strong for community-led brands, weaker for B2B and creator audiences
+9. **Standalone quote posts** — easy to batch; one piece of source content yields 3-5 posts
+10. **YouTube Community post** — useful as a bridge between video drops; not a primary reach lever
 
 Present the ranking as a prioritized list with a one-line rationale for each.
 
@@ -234,5 +258,7 @@ Deliver repurposed content in this structure:
 - **social-media-context-sms** — establish voice, pillars, and platform mix before repurposing
 - **platform-strategy-sms** — decide which platforms to prioritize and why
 - **post-writer-sms** — write a single original post from scratch
-- **thread-writer-sms** — write a full multi-part thread
-- **carousel-writer-sms** — write and structure a carousel post
+- **thread-writer-sms** — write a full multi-part thread or video series
+- **carousel-writer-sms** — write and structure a carousel for any platform
+- **caption-writer-sms** — write platform-native captions for visual-first derivatives (Facebook, Instagram, TikTok, Pinterest, YouTube)
+- **hook-writer-sms** — generate strong hooks for each derivative

@@ -1,8 +1,8 @@
 ---
 name: thread-writer-sms
-description: "When the user wants to write a multi-part thread for Twitter/X, LinkedIn, or other platforms. Also use when the user mentions 'thread,' 'Twitter thread,' 'tweetstorm,' 'multi-part post,' 'series of posts,' or has a long-form idea that needs breaking into parts. For single posts, see post-writer-sms. For carousels, see carousel-writer-sms."
+description: "When the user wants to write a multi-part thread or content series for Twitter/X, LinkedIn, Threads, Instagram (Reel/carousel/Story series), TikTok (multi-part videos), YouTube (video series, multi-Short series), or Facebook. Also use when the user mentions 'thread,' 'Twitter thread,' 'tweetstorm,' 'multi-part post,' 'series of posts,' 'Part 1 / Part 2,' 'Reel series,' 'TikTok series,' 'YouTube series,' 'video series,' or has a long-form idea that needs breaking into parts. For single posts, see post-writer-sms. For carousels, see carousel-writer-sms."
 metadata:
-  version: 1.2.0
+  version: 1.3.0
 ---
 
 # Thread Writer
@@ -255,6 +255,72 @@ The algorithm rewards engagement rate, not volume.
 - **No hard character ceiling pressure** — let posts breathe; 1-3 short paragraphs per post is fine
 - **Tone is casual** — polish is suspicious here; raw and real outperforms polished and corporate
 
+### Facebook
+
+- **No native threading** — a series is a sequence of standalone posts, similar to LinkedIn
+- **Label each part** — "Series (1/5):" or "Part 1 of 5" at the very top of each post
+- **Pin the first post** to the Page or Profile while the series is running so latecomers can find Part 1
+- **Each post can be longer** — 200-500 chars per post, conversational and story-driven
+- **Cross-link between parts** — close each post with "Part 2 drops Tuesday" or pin a comment with the link to the next/previous part
+- **Tone:** community-forward, personal, story-led — Facebook rewards posts that feel like a human, not a brand
+
+### Instagram
+
+Instagram has no native thread mechanism, but three formats can carry a multi-part series:
+
+- **Reel series** — "Part 1," "Part 2" labelled in the on-screen text **and** in the first line of the caption. Pin Part 1 to the profile grid while the series is running. Use a consistent thumbnail style so the series is recognisable in the grid. Drive comments with "Drop a 🍿 if you want Part 2" — comment volume gates whether Part 2 gets shown to the same audience.
+- **Carousel as thread** — a single 10-slide carousel **is** a thread. One idea per slide, hook on slide 1, payoff on slide 10. See `carousel-writer-sms` for slide-by-slide structure.
+- **Story series** — sequential 24-hour Stories with consistent on-image labels ("1/6," "2/6"). Use a Highlights cover so the series is preserved past 24 hours.
+
+**Rules across all three:**
+- The hook on Part 1 must promise the full series payoff, not just the first installment
+- 3-10 hashtags on each post; reuse the same set for series recognition
+- "Save" and "Share" are the engagement signals that compound across the series
+
+### TikTok
+
+TikTok is the strongest native fit for video threads outside of X.
+
+- **Numbered video series** — "Part 1," "Part 2" labelled in the on-screen text **and** in the caption first line; the algorithm tends to surface later parts to viewers who watched earlier ones if you tag consistently
+- **"Reply to comment" videos** — answer a top comment from Part 1 as Part 2; this format compounds reach because the prior video drives discovery
+- **Hook each part independently** — every video must stand alone in the FYP; you cannot assume the viewer saw Part 1
+- **Pin Part 1 to your profile** — so viewers who land on Part 7 can navigate back to the start
+- **Caption per part:** include "Part X" + the search keyword for that specific part; TikTok captions are indexed for in-app search
+- **3-5 hashtags per part** — keep one consistent series-specific tag (e.g., `#mycoldemailseries`) so viewers can browse the full set
+- **Mention the series in voiceover too**, not just on-screen — accessibility plus retention
+
+### YouTube
+
+YouTube treats series as first-class content via **Playlists** for long-form and **Series links** for Shorts.
+
+**Long-form video series:**
+- Bundle all parts into a **Playlist**; link the playlist URL above the description fold on every video
+- Title each part: `"[Series Name] — Part X: [Specific Topic]"` so search and suggested-videos rank them together
+- Use the **end screen** to autoplay the next part
+- Reference earlier parts in the first 30 seconds of voiceover; reference later parts in the closing 30 seconds
+- Keep thumbnails visually consistent (same colour, frame, or graphic) so the series is recognisable in suggested results
+
+**Shorts series:**
+- **"Part 1 / Part 2"** labelled in the on-screen text and the caption — same rules as TikTok
+- Include `#shorts` plus a series-specific hashtag on every part
+- Pin the first Short to the Shorts shelf on the channel page
+- Use **chapters in long-form video descriptions** to reference Shorts: "Want the long version? Watch the full breakdown: [link]"
+
+**Community posts as bridges:**
+- Drop a Community post between video parts to keep the audience warm — poll, question, behind-the-scenes
+- Use it to ask: "What should Part 3 cover?" — generates comments and shapes the series
+
+### Pinterest
+
+Pinterest doesn't natively support threads or sequential parts the way social platforms do. Use these workarounds when a series concept is genuinely useful:
+
+- **Idea Pins (multi-page pins)** — up to 20 pages in a single pin, swipeable; functions as a self-contained thread. See `carousel-writer-sms` for slide-by-slide structure
+- **Topic-clustered Boards** — pin Part 1 / Part 2 / Part 3 as separate pins to the same board with consistent titling ("Cold Email Series — Part 1: Subject Lines," "Part 2: Opening Lines"); the board becomes the thread
+- **Link each pin** to its respective long-form article or video — Pinterest is a search engine, so each pin needs to stand alone in search results
+- **Skip explicit "thread" framing in titles** — searchers don't search for "Part 2"; lead with the keyword and append the part number
+
+If the user wants a true sequential narrative on Pinterest, redirect to an Idea Pin or move the thread to another platform.
+
 ---
 
 ## Pacing Tips
@@ -288,9 +354,11 @@ Before delivering the final thread, verify:
 - [ ] **First post was written using hook-writer-sms** — skill was invoked to generate variants, not drafted freehand
 - [ ] **One idea per post** — no post tries to do two jobs
 - [ ] **Transitions are present** — each post flows into the next
-- [ ] **Posts are numbered** — on Twitter/X, every post has its number
+- [ ] **Posts are numbered** — on Twitter/X, every post has its number; on visual platforms, "Part X" is in both on-screen text and the caption
 - [ ] **Closer has a CTA** — the reader knows exactly what to do after finishing
-- [ ] **Length matches platform** — 280 chars on X, longer on LinkedIn, conversational on Threads
+- [ ] **Length matches platform** — 280 chars on X, longer on LinkedIn, conversational on Threads, on-screen + caption combo for Reels/TikTok/Shorts
+- [ ] **Visual-platform parts stand alone** — each Reel, TikTok, or Short has its own hook and payoff; you cannot assume viewers saw Part 1
+- [ ] **Series is discoverable** — Part 1 pinned, consistent thumbnails/hashtag, playlist or board configured for YouTube/Pinterest
 - [ ] **Voice is consistent** — sounds like the user, not a generic expert
 - [ ] **White space is readable** — empty line after every 1-2 lines within each post; no dense text blocks
 
@@ -311,3 +379,5 @@ Before delivering the final thread, verify:
 - **hook-writer-sms** — generate and test opening lines before threading
 - **platform-strategy-sms** — decide which platform to prioritize and why
 - **post-writer-sms** — write a single post when the idea doesn't need a thread
+- **caption-writer-sms** — write the per-part captions for Reel/TikTok/Short series and Pinterest pins
+- **carousel-writer-sms** — when an Instagram carousel or Pinterest Idea Pin is the right thread format

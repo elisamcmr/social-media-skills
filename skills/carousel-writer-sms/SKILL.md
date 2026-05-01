@@ -1,8 +1,8 @@
 ---
 name: carousel-writer-sms
-description: "When the user wants to write content for a LinkedIn carousel, slide deck, or swipeable multi-slide format. Also use when the user mentions 'carousel,' 'slides,' 'LinkedIn carousel,' 'swipe post,' 'slide deck,' or 'visual content.' Outputs slide-by-slide text content (not visual design). For single posts, see post-writer-sms. For threads, see thread-writer-sms."
+description: "When the user wants to write content for a LinkedIn carousel, Instagram carousel, Facebook carousel, TikTok photo carousel, Pinterest Idea Pin, or any swipeable multi-slide format. Also use when the user mentions 'carousel,' 'slides,' 'LinkedIn carousel,' 'Instagram carousel,' 'IG carousel,' 'photo carousel,' 'TikTok photo carousel,' 'Idea Pin,' 'Pinterest Idea Pin,' 'swipe post,' 'slide deck,' or 'visual content.' Outputs slide-by-slide text content (not visual design). For single posts, see post-writer-sms. For threads, see thread-writer-sms. For caption copy under each slide post, see caption-writer-sms."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Carousel Writer
@@ -11,6 +11,8 @@ metadata:
 
 - User asks to **write a carousel** or create slide-by-slide content
 - User mentions "carousel," "slides," or "LinkedIn carousel"
+- User mentions "Instagram carousel," "IG carousel," or "photo carousel"
+- User mentions "TikTok photo carousel," "Idea Pin," or "Pinterest Idea Pin"
 - User says "swipe post," "slide deck," or "visual content"
 - User wants to turn an idea into a **multi-slide format**
 - User shares a topic and asks for a swipeable breakdown
@@ -37,10 +39,11 @@ If the file does not exist, say:
 Ask only for what the user has not already provided:
 
 - **Topic or key message** — the idea, framework, or insight the carousel will teach
-- **Target slide count** — recommend 7–12 slides for LinkedIn (sweet spot for depth without fatigue)
+- **Target platform** — LinkedIn, Instagram, Facebook, TikTok (photo carousel), Pinterest (Idea Pin); rules and slide counts differ per platform
+- **Target slide count** — recommend 7–12 for LinkedIn, 8-10 for Instagram, 5-8 for Facebook, 6-12 for TikTok photo carousels, 6-10 pages for Pinterest Idea Pins
 - **Goal** — educate, share a framework, list tips, tell a story, or present data
 
-If the user gives you a topic, start drafting. Don't over-ask.
+If the user gives you a topic and platform, start drafting. Don't over-ask.
 
 ---
 
@@ -208,6 +211,81 @@ Body: I stopped writing about what I knew and started writing about what I strug
 
 ---
 
+## Platform-Specific Rules
+
+The body structure (cover → context → body → CTA) is universal. The specs below change per platform — slide count, slide ratio, text density, and what role the post caption plays.
+
+### LinkedIn
+
+- **Format:** PDF document upload (the "document post") rendered as a swipeable carousel; or native multi-image post
+- **Slide count:** 7-12; sweet spot is 9-10
+- **Slide ratio:** 1:1 (1080x1080) or vertical 4:5 (1080x1350); vertical takes more screen real estate in feed
+- **Text density:** can carry more text per slide than Instagram — LinkedIn readers expect depth
+- **Post caption** (text below the carousel): hook + 1-2 paragraph teaser of what the carousel covers; **no link in body** — drop it in the first comment
+- **Hashtags:** 3-5 at the end of the caption
+- **Pin a CTA comment** with the link or follow-up resource
+
+### Instagram
+
+- **Format:** native carousel post — up to **10 slides** (hard cap), or up to 20 with the recent expansion in some accounts
+- **Slide count:** 8-10 is the sweet spot; first slide is the cover
+- **Slide ratio:** 1080x1350 (4:5) for maximum vertical real estate, or 1080x1080 (1:1) — never landscape
+- **Text density:** lower than LinkedIn — Instagram readers fatigue on dense slides; max ~30 words per slide body, headers as large readable text
+- **Post caption:** hook in line 1 (first 125 chars before "...more"), 200-800 chars total, save/share CTA at the end
+- **Hashtags:** 3-10, end of caption or first comment
+- **Alt text:** write it in the accessibility setting on each slide
+- **Save and share** are the primary engagement signals — every carousel should explicitly invite both: "Save this for later," "Send to a friend who needs this"
+- **Loop the last slide back to the first** if appropriate — re-engagement boosts the algorithm
+
+### Facebook
+
+- **Format:** multi-photo post or native carousel ad format (organic carousels are less common but supported)
+- **Slide count:** 5-8; longer carousels underperform here vs. Instagram
+- **Slide ratio:** 1:1 works best across feed, Stories, and right-rail
+- **Text density:** moderate — Facebook readers tolerate more on-image text than Instagram but less than LinkedIn
+- **Post caption:** conversational, story-led, 200-500 chars; question CTA at the end
+- **Hashtags:** 1-3 max, only if branded or community-specific
+- **Tag relevant Pages** to expand reach into their networks
+
+### TikTok (photo carousel)
+
+TikTok introduced photo carousels (also called "photo mode" or "image post") in 2022 — an alternative to video that has its own algorithmic surface.
+
+- **Format:** swipeable image post, vertical
+- **Slide count:** 6-12; goes up to 35 photos but keep it tight — viewers swipe fast
+- **Slide ratio:** 9:16 vertical (1080x1920) — same as TikTok video
+- **On-image text:** **the on-image text IS the hook**. Put the headline on slide 1 in large readable text, not in the caption. Keep on-image text under 6 words per slide for legibility on small screens
+- **Post caption:** under 150 chars typically; matches TikTok video caption rules — punchline, search keyword, or curiosity gap
+- **Hashtags:** 3-5, including a niche-specific tag and a broad tag
+- **Music:** add a trending audio track even though it's a photo carousel — TikTok rewards carousels with audio with broader distribution
+- **Looping carousels** with a punchline reveal on the last slide get rewatched, which boosts reach
+- **Native voice:** low-polish, native, conversational — overproduced photo carousels feel like ads and underperform
+
+### Pinterest (Idea Pin)
+
+Pinterest's swipeable multi-page format is called an **Idea Pin** (formerly "Story Pin").
+
+- **Format:** vertical, full-screen, multi-page Idea Pin
+- **Page count:** 6-10 pages; up to 20 supported but viewer drop-off is steep past 10
+- **Page ratio:** 9:16 vertical (1080x1920) — full-bleed
+- **Each page is its own searchable surface:** treat the **first page as the search-keyword cover** — title and on-image text both indexed
+- **On-page text:** keyword-led, scannable, no walls of text; one teaching point per page
+- **Topic tags:** Pinterest has a dedicated topic-tag field for Idea Pins (different from regular pin descriptions); add 5-10 specific tags from Pinterest's predefined topic list
+- **No external link on individual pages** — Idea Pins don't carry per-page links the way regular pins do; use the description and creator profile to point traffic
+- **Hashtags:** still effectively ignored on Pinterest; lean on natural keywords in the title and on-page text
+- **Voiceover or recipe/list overlay** features are supported and boost completion rate
+- **Save** is the primary engagement signal — write each page so a saver can return to it as a standalone reference
+
+### Carousel Caption vs. Slide Copy
+
+The **slide copy** lives on the image. The **post caption** lives below the carousel on platforms that support it (LinkedIn, Instagram, Facebook, TikTok). Write them together but don't duplicate:
+
+- The slides carry the value
+- The caption sets up the swipe and closes with the CTA
+- For deeper guidance on writing the post caption itself per platform, use **caption-writer-sms**
+
+---
+
 ## Output Format
 
 Output each slide as a clearly labeled block. Use this structure:
@@ -299,4 +377,5 @@ CTA: Save this framework. Use it on your next post. Follow for one writing tip e
 
 - **social-media-context-sms** — establish voice and platform preferences before writing slides
 - **hook-writer-sms** — craft a high-converting cover slide headline before building the carousel
+- **caption-writer-sms** — write the post caption that sits below the carousel on Instagram, Facebook, TikTok, and YouTube Community posts
 - **content-repurposer-sms** — turn an existing post, thread, or article into a carousel
