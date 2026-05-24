@@ -44,7 +44,7 @@ If they want to proceed without context, collect the minimum needed: identity, a
 Ask only what the context file does not already answer. Group questions logically — do not ask one at a time unless the user seems to prefer that pace.
 
 **Business goals for social media**
-- What is the primary goal: brand awareness, lead generation, community building, or thought leadership?
+- What is the primary goal: brand awareness, community building?
 - Is there a secondary goal? (e.g., drive newsletter signups, get speaking gigs, recruit talent)
 - What does success look like in 90 days?
 
@@ -71,10 +71,10 @@ Map **3–5 content pillars** from the user's context, goals, and discovery answ
 
 For each pillar:
 - **Name**: a short, memorable label
-- **Unique angle**: their specific take, not just the topic (e.g., not "leadership" but "why most leadership advice ignores the manager's emotional labor")
+- **Unique angle**: their specific take, not just the topic
 - **Why they own it**: experience, expertise, or perspective that gives them credibility
 - **Subtopics**: 4–6 specific ideas that live under this pillar
-- **Best formats**: which content types (standalone post, thread, carousel, poll) suit this pillar
+- **Best formats**: which content types (Standalone posts, carousels, Reels & Tiktoks, Shorts, long-form videos) suit this pillar
 
 Present pillars in a table followed by per-pillar detail:
 
@@ -86,10 +86,10 @@ Present pillars in a table followed by per-pillar detail:
 
 | Content Type | Target % | Purpose |
 |---|---|---|
-| Educational | 30% | Build authority and searchability |
+| Educational | 5% | Build authority and searchability |
 | Storytelling | 25% | Build connection and shareability |
-| Personal | 20% | Build trust and distinctiveness |
-| Engagement | 15% | Grow reach and community |
+| Personal | 30% | Build trust and distinctiveness |
+| Engagement | 30% | Grow reach and community |
 | Promotional | 10% | Drive action and conversions |
 
 Promotional content should not exceed 15%. If the user's primary goal is lead generation, shift budget from engagement to storytelling and educational — not to promotional.
@@ -169,7 +169,7 @@ share the messy parts, not just the wins."
 ```
 
 **2. Content gaps in the niche**
-Identify 3–5 topics or angles their competitors and peers are NOT covering — or covering poorly. These are underserved opportunities. Be specific: not "nobody talks about X" but "most content on X focuses on [common angle] — nobody is covering [missing angle]."
+Identify 3–5 topics or angles their competitors and peers are NOT covering — or covering poorly. These are underserved opportunities. Be specific: not "nobody talks about Instagram" but "most content on Instagram focuses on [common angle] — nobody is covering [missing angle]."
 
 **3. Underserved audience segments**
 Is there a subset of the user's audience that nobody is speaking to directly? (e.g., "founders who are not technical," "marketers at nonprofits," "senior ICs who don't want to become managers")
