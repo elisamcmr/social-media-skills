@@ -42,7 +42,7 @@ Tell the user: "I don't have your social media context yet. Run the **social-med
 Ask only what context and strategy files do not already answer. Group questions — do not ask one at a time.
 
 **Platforms and frequency**
-- Which platforms are you posting to? (LinkedIn, Threads, Twitter/X, Bluesky, other)
+- Which platforms are you posting to? (Instagram, Tiktok, Youtube)
 - What is your target frequency per platform per week?
 - Are there platforms you want to prioritize vs. maintain at lower effort?
 
@@ -68,8 +68,8 @@ Choose **weekly** or **monthly** view based on the user's preference. Default to
 
 Each calendar entry includes:
 - **Day** (e.g., Monday)
-- **Platform** (e.g., LinkedIn)
-- **Content pillar** (e.g., Educational)
+- **Platform** (e.g., Instagram)
+- **Content pillar** (e.g., Storytelling)
 - **Topic / angle** (specific, not generic)
 - **Format** (standalone post / thread / carousel / poll)
 
