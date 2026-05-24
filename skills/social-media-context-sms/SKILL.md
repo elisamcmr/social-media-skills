@@ -65,12 +65,12 @@ Who is this account?
 - **Creator or brand?** (Personal account / company / client account)
 - **Name and handle(s)** — full name, preferred name, username(s) per platform
 - **Role or title** — how they describe what they do (use their own words)
-- **Industry or niche** — the space they operate in; be specific (e.g., "B2B SaaS growth" not just "tech")
+- **Industry or niche** — the space they operate in
 - **One-line positioning** — what makes them different from others in the same space
 
 Example questions to ask:
-- "How do you introduce yourself at the start of a post?"
-- "What do you do that most people in your field don't?"
+- "How do you introduce yourself to your audience"
+- "What differentiates you from the other content creators out there in your field"
 
 ---
 
@@ -78,10 +78,9 @@ Example questions to ask:
 
 Who is this content for?
 
-- **Primary audience** — job title, life stage, or identity that best describes them
+- **Primary audience** — demographics, life stage, or identity that best describes them
 - **What they struggle with** — the specific problems or frustrations the user's content addresses
-- **What they want** — goals, ambitions, outcomes they're chasing
-- **What they already know** — sophistication level; avoid over-explaining or under-explaining
+- **What they are looking for** — type of content they are seeking
 - **Where they hang out** — which platforms they're most active on, and in what context
 
 Example questions to ask:
@@ -138,11 +137,10 @@ Where do they post, and what are they trying to do?
 
 For each platform they use, capture:
 
-- **Platform name** (LinkedIn, Twitter/X, Threads, Bluesky)
-- **Primary goal** — grow audience / build authority / drive leads / engage community / stay visible
+- **Platform name** - (Instagram/YouTube/Tiktok/X)
+- **Primary goal** — grow audience / engage community / stay visible
 - **Current posting frequency** — how often they actually post
 - **Target posting frequency** — how often they want to post
-- **Connected via BlackTwist?** — yes / no (used by other skills for tool integration)
 
 Example questions to ask:
 - "Which platforms are you currently active on?"
@@ -154,12 +152,11 @@ Example questions to ask:
 
 How do they like to communicate?
 
-- **Formats they use** — standalone posts, threads/tweet storms, carousels, polls, long-form articles
+- **Formats they use** — standalone posts, long-form videos, Reels and Tiktoks, carousels
 - **Preferred format per platform** — what tends to work well for them
 - **Formats they avoid** — formats they've tried and don't like, or don't fit their style
 
 Example questions to ask:
-- "Do you prefer writing short punchy posts or longer threads?"
 - "Any formats you've tried and never want to do again?"
 
 ---
